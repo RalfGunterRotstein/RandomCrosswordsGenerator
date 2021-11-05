@@ -12,7 +12,10 @@ How to use it:
 8. In **images/**, you may exchange the files **direction-selector.svg** and **space-marker.svg** for your own SVGs with the same name.
 9. Change the file view/styles/**crosswords.css** according to your design.
 
-You can see it working at:
-1. [Wonderland Random Crosswords – Ralf’s Portfolio](http://ralf.infinityfreeapp.com/random_crosswords_generator/alices-adventures-in-wonderland.php);
-2. [Looking-Glass Random Crosswords – Ralf’s Portfolio](http://ralf.infinityfreeapp.com/random_crosswords_generator/through-the-looking-glass.php); and
-3. [Wonderland and Looking-Glass Random Crosswords – Ralf’s Portfolio](http://ralf.infinityfreeapp.com/random_crosswords_generator/alices-adventures-in-wonderland-and-through-the-looking-glass.php).
+You can see it working at the following links:
+1. [Alice’s Adventures in Wonderland](http://ralf.infinityfreeapp.com/random_crosswords_generator/alices-adventures-in-wonderland.php);
+2. [Through The Looking-Glass](http://ralf.infinityfreeapp.com/random_crosswords_generator/through-the-looking-glass.php);
+3. [Both themes above together](http://ralf.infinityfreeapp.com/random_crosswords_generator/alices-adventures-in-wonderland-and-through-the-looking-glass.php);
+4. [Aristotle (in Portuguese)](https://basicoavancado.com/aristoteles/prova);
+5. [Fashion (in Portuguese)](https://basicoavancado.com/moda/prova); and
+6. [Both themes above together (in Portuguese)](https://basicoavancado.com/prova);
