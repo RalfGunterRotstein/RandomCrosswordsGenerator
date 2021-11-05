@@ -1,0 +1,38 @@
+<article id='crossword-article'>
+    <div id='crossword__title-container' class="article-introductory-div">
+        <h2>Crossword</h2>
+        
+        <div>
+            <!-- Mustn't contain even spaces inside, so the :empty selector works. -->
+            <div id="crosswords__evaluation-feedback" class="article-introductory-paragraphs"></div>
+        </div>
+    </div>
+
+    <div id="crossword__direction-selectors">
+        <button id="direction-selectors__horizontal">hor.</button>
+        <button id="direction-selectors__toggle" aria-label="alternar direção">
+        {{svg-direction-icon}}
+        </button>
+        <button id="direction-selectors__vertical">ver.</button>
+    </div>
+    
+    <div id="crossword__answers">
+        <form id="crossword__answers__form" name="crossword__answers__form">
+            {{crossword}}
+            
+            <div id='crossword__answers__form__submit-container'>
+                <input id='crossword__answers__form__submit-button' type='submit' value='Enviar'>
+            </div>
+        </form>
+    </div>
+    
+    <div id="numbered-questions__container">
+        <dl id="numbered-questions">
+            {{questions}}
+        </dl>
+    </div>
+
+    
+    <link rel="stylesheet" href="view/styles/crosswords.css">
+    <script src="controller/js/CrosswordsInteractor.js"></script>
+</article>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160">
+  <defs>
+    <clipPath>
+      <rect width="160" height="160"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-space-marker)">
+    <g>
+      <path data-name="Path 5" d="M41.5,35.5l-20,20" transform="translate(108.5 94.5)" fill="none" stroke="#000" stroke-width="2"/>
+      <path data-name="Path 4" d="M101.5,35.5l-80,80" transform="translate(48.5 34.5)" fill="none" stroke="#000" stroke-width="2"/>
+      <path data-name="Path 3" d="M1.5,140.5,141.5.5" transform="translate(8.5 9.5)" fill="none" stroke="#000" stroke-width="2"/>
+      <path data-name="Path 2" d="M21.5,115.5l80-80" transform="translate(-11.5 -25.5)" fill="none" stroke="#000" stroke-width="2"/>
+      <path data-name="Path 1" d="M21.5,55.5l20-20" transform="translate(-11.5 -25.5)" fill="none" stroke="#000" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

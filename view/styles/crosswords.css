@@ -1,0 +1,300 @@
+#crosswords__evaluation-feedback:empty {
+  display: none;
+}
+#crosswords__evaluation-feedback {
+  max-width: 400px;
+}
+
+#crossword__direction-selectors,
+#crossword__answers,
+input[type=submit] {
+  margin-top: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#crossword {
+  font-size: 0; /* avoids spaces between squares. */
+  line-height: 0; /* avoids spaces between squares. */
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+#crossword .square {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px; /* Overlaps boards. */
+  margin-left: -1px; /* Overlaps boards. */
+}
+#crossword .square.top-border-square {
+  margin-top: 0;
+}
+#crossword .square.left-border-square {
+  margin-left: 0;
+}
+#crossword .square.filled-square {
+  border: 1px solid;
+  background-color: white;
+  color: black;
+}
+#crossword .square.filled-square.square--selected {
+  background-color: #153879;
+  color: black;
+  border-color: black;
+}
+#crossword .square.filled-square.square--selected .question-number {
+  color: #153879;
+}
+#crossword .square.filled-square.square--selected input {
+  color: white;
+}
+#crossword .square.filled-square input {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Alice", "Georgia";
+  text-transform: uppercase;
+}
+#crossword .square.filled-square .question-number {
+  font-family: "Segoe UI";
+  position: absolute;
+  color: black;
+  font-size: 8px;
+}
+#crossword .square.filled-square .question-number.horizontal {
+  left: 1px;
+  top: 35%;
+}
+#crossword .square.filled-square .question-number.vertical {
+  right: 1px;
+  top: 0;
+}
+#crossword .square.filled-square .question-number.question-number--selected {
+  color: white;
+}
+#crossword .square.space-marker {
+  border: 1px solid;
+  background-color: aliceblue;
+  color: black;
+}
+#crossword .square.space-marker svg {
+  position: absolute;
+}
+#crossword .square.space-marker svg * {
+  stroke: black;
+}
+#crossword .square.outer-square {
+  background-color: aliceblue;
+  color: black;
+}
+#crossword .square.inner-square {
+  background-color: black;
+}
+#crossword .square.up-from-filled-square {
+  border-bottom: 1px solid;
+}
+#crossword .square.right-from-filled-square {
+  border-left: 1px solid;
+}
+#crossword .square.down-from-filled-square {
+  border-top: 1px solid;
+}
+#crossword .square.left-from-filled-square {
+  border-right: 1px solid;
+}
+
+#crossword__answers__form__submit-container {
+  text-align: center;
+}
+#crossword__answers__form__submit-container #crossword__answers__form__submit-button {
+  -webkit-appearance: none;
+  font-family: "Georgia";
+  font-size: 1rem;
+  min-width: 128px;
+  border: 2px solid;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #d1e0ec;
+  border-radius: 16px;
+}
+@media (hover: hover) and (pointer: fine) {
+  #crossword__answers__form__submit-container #crossword__answers__form__submit-button:hover {
+    cursor: pointer;
+    background-color: #153879;
+    border-color: black;
+    color: aliceblue;
+  }
+}
+
+#crossword .square {
+  width: 51px;
+  height: 51px;
+}
+#crossword .square input {
+  width: 51px;
+  height: 51px;
+  font-size: 1.75rem;
+}
+@media only screen and (max-width: 700px) {
+  #crossword .square {
+    width: 44px;
+    height: 44px;
+  }
+  #crossword .square input {
+    height: 44px;
+    width: 44px;
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #crossword .square {
+    width: 29px;
+    height: 29px;
+  }
+  #crossword .square input {
+    width: 29px;
+    height: 29px;
+    font-size: 1rem;
+  }
+}
+
+#crossword__direction-selectors {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+#crossword__direction-selectors > * {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#direction-selectors__horizontal,
+#direction-selectors__vertical {
+  font-family: "Segoe UI";
+  width: 64px;
+  height: 32px;
+}
+#direction-selectors__horizontal.active,
+#direction-selectors__vertical.active {
+  font-size: 1.25rem;
+  border-bottom: 2px solid #4d7eda;
+}
+
+#direction-selectors__toggle {
+  display: flex;
+  align-items: center;
+}
+#direction-selectors__toggle::before {
+  content: " ";
+  display: block;
+  padding-bottom: 100%;
+}
+#direction-selectors__toggle svg {
+  width: 100px;
+  height: 25px;
+  transition: 1s;
+}
+#direction-selectors__toggle.horizontal svg {
+  transform: rotate(0deg);
+}
+#direction-selectors__toggle.vertical svg {
+  transform: rotate(-90deg);
+}
+
+#numbered-questions__container {
+  margin-top: 16px;
+  overflow: visible;
+}
+
+dl#numbered-questions {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 8px;
+  padding-left: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 960px;
+}
+@media only screen and (max-width: 500px) {
+  dl#numbered-questions {
+    grid-template-columns: 1fr;
+  }
+}
+
+dl#numbered-questions div.numbered-questions__question {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding-right: 16px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  dl#numbered-questions div.numbered-questions__question:hover {
+    background-color: #153879;
+    color: white;
+    cursor: pointer;
+  }
+  dl#numbered-questions div.numbered-questions__question:hover dt {
+    color: white;
+  }
+  dl#numbered-questions div.numbered-questions__question:hover dd {
+    border-color: white;
+  }
+}
+dl#numbered-questions div.numbered-questions__question.touch-started, dl#numbered-questions div.numbered-questions__question.question--selected {
+  background-color: #153879;
+  color: white;
+  cursor: pointer;
+}
+dl#numbered-questions div.numbered-questions__question.touch-started dt, dl#numbered-questions div.numbered-questions__question.question--selected dt {
+  color: white;
+}
+dl#numbered-questions div.numbered-questions__question.touch-started dd, dl#numbered-questions div.numbered-questions__question.question--selected dd {
+  border-color: white;
+}
+dl#numbered-questions div.numbered-questions__question dt {
+  padding-top: 16px;
+  padding-left: 8px;
+  font-size: 1rem;
+  color: #4d7eda;
+}
+dl#numbered-questions div.numbered-questions__question dd {
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 2px solid #4d7eda;
+  flex-grow: 1;
+}
