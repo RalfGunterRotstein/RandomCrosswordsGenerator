@@ -19,4 +19,4 @@ You can see it working at the following links:
 4. [Aristotle (in Portuguese)](https://basicoavancado.com/aristoteles/prova);
 5. [Fashion (in Portuguese)](https://basicoavancado.com/moda/prova);
 4. [Tao Te Ching (in Portuguese)](https://basicoavancado.com/taoteching/prova); and
-6. [Both themes above together (in Portuguese)](https://basicoavancado.com/prova);
+6. [The three themes above together (in Portuguese)](https://basicoavancado.com/prova);
