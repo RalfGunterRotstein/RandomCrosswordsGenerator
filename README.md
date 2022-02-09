@@ -18,5 +18,6 @@ You can see it working at the following links:
 3. [Both themes above together](http://ralf.infinityfreeapp.com/random_crosswords_generator/alices-adventures-in-wonderland-and-through-the-looking-glass.php);
 4. [Aristotle (in Portuguese)](https://basicoavancado.com/aristoteles/prova);
 5. [Fashion (in Portuguese)](https://basicoavancado.com/moda/prova);
-4. [Tao Te Ching (in Portuguese)](https://basicoavancado.com/taoteching/prova); and
-6. [The three themes above together (in Portuguese)](https://basicoavancado.com/prova);
+6. [Tao Te Ching (in Portuguese)](https://basicoavancado.com/taoteching/prova);
+7. [Chess (in Portuguese)](https://basicoavancado.com/xadrez/prova); and
+8. [The three themes above together (in Portuguese)](https://basicoavancado.com/prova);
